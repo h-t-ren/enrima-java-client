@@ -22,7 +22,6 @@ public class ModelClient {
 		ModelSpecRev modelSpecRev = response.getModelSpecRev();
 		EntitySpec x =SymbolicModelSpecificationHelper.getEntitySpecByShortName(modelSpecRev,"x");
 		System.out.println("entity Spec: ");
-		System.out.println("-------------------------------");
 		System.out.println("id: " + x.getId());
 		System.out.println("shortName: " + x.getShortName());
 		System.out.println("name: " + x.getName());
@@ -61,10 +60,8 @@ public class ModelClient {
 		    EntitySpec upperboudEntitySpec = SymbolicModelSpecificationHelper.getEntitySpecById(modelSpecRev,x.getIdUpperBound());
 		    System.out.println("upperbound: " + upperboudEntitySpec.getConstantValue());
 		}
-		System.out.println("-------------------------------");
 		
 		System.out.println(x.getName() +"  values");
-		System.out.println("-------------------------------");
 		List<EntityValue> entityValues = ModelInstanceHelper.findEntityValuesByEntiySpec(response, x);
 		for(EntityValue ev:entityValues)
 		{
@@ -86,7 +83,7 @@ public class ModelClient {
 			tuple += "]";
 			System.out.println(x.getShortName()+ tuple +" = " +ev.getValue());
 		}
-		System.out.println("-------------------------------");
+
 	}
 
     public GetModelInstanceResponse getModelInstance(int idModelInstance)
