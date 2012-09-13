@@ -19,11 +19,11 @@ public class EnrimaWSProxy {
     	return service.getEnrimaSoap11().getSMS(request).getModelSpec();
     }
     
-    public GetEntityValuesResponse getEntityValues(int idModelInstance,String entityShortName)
+    public GetEntityValuesResponse getEntityValues(int idModelData,String entityShortName)
     {
     	GetEntityValuesRequest request = objectFactory.createGetEntityValuesRequest();
     	request.setEntityShortName(entityShortName);
-    	request.setIdModelInstance(idModelInstance);
+    	request.setIdModelData(idModelData);
     	return service.getEnrimaSoap11().getEntityValues(request);
     }
     
