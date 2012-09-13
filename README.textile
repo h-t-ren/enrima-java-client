@@ -45,7 +45,7 @@ h2. Files:
 	  </goals>
 	  <configuration>
              <wsdlUrls>
-		<wsdlUrl>http://www.ime.iiasa.ac.at/enrima_ws_tst1/enrima.wsdl</wsdlUrl>
+		<wsdlUrl>http://www.ime.iiasa.ac.at/enrima_ws_tst1/soap/enrima.wsdl</wsdlUrl>
 	     </wsdlUrls>
              <packageName>at.ac.iiasa.ime.enrima.example.client.jaxws</packageName>
 	  </configuration>
