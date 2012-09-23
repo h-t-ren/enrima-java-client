@@ -15,7 +15,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>at.ac.iiasa.ime.enrima</groupId>
-			<artifactId>enrima-jaxws-client-oxm</artifactId>
+			<artifactId>enrima-jaxws-client-oxm/artifactId>
 			<version>2.0</version>
 		</dependency>
 	

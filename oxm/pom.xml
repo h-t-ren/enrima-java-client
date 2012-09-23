@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<parent>
 		<groupId>at.ac.iiasa.ime.enrima</groupId>
-		<artifactId>enrima-jaxws-client-mockup</artifactId>
-		<version>1.0</version>
+		<artifactId>enrima-jaxws-client</artifactId>
+		<version>2.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>enrima-jaxws-client-oxm-mockup</artifactId>
+	<artifactId>enrima-jaxws-client-oxm</artifactId>
 	<packaging>jar</packaging>
 
 	<build>
