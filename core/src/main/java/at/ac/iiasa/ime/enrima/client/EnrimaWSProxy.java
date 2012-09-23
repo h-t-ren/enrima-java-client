@@ -1,6 +1,8 @@
 package at.ac.iiasa.ime.enrima.client;
 
 import at.ac.iiasa.ime.enrima.client.jaxws.EnrimaService;
+import at.ac.iiasa.ime.enrima.client.jaxws.GetBatchValuesRequest;
+import at.ac.iiasa.ime.enrima.client.jaxws.GetBatchValuesResponse;
 import at.ac.iiasa.ime.enrima.client.jaxws.GetEntityValuesRequest;
 import at.ac.iiasa.ime.enrima.client.jaxws.GetEntityValuesResponse;
 import at.ac.iiasa.ime.enrima.client.jaxws.GetSMSRequest;
@@ -28,5 +30,12 @@ public class EnrimaWSProxy {
     }
     
     
-
+    public GetBatchValuesResponse getBatchValues(int idModelData,String group)
+    {
+    	GetBatchValuesRequest request = objectFactory.createGetBatchValuesRequest();
+    	request.setIdModelData(idModelData);
+    	request.setBatch("buildingPara");
+    	return service.getEnrimaSoap11().getBatchValues(request);
+    }
+    
 }

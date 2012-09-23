@@ -22,8 +22,8 @@
 						</goals>
 						<configuration>
 							<wsdlUrls>
-								<wsdlUrl>http://www.ime.iiasa.ac.at/enrima_ws_tst1/soap/enrima.wsdl</wsdlUrl>-->
-							  <!--    <wsdlUrl>http://pc98135:8080/enrima-ws-server-ws-mockup/soap/enrima.wsdl</wsdlUrl>-->
+							 <wsdlUrl>http://www.ime.iiasa.ac.at/enrima_ws_tst1/soap/enrima.wsdl</wsdlUrl>
+							  <!-- 	  <wsdlUrl>http://pc98135:8080/enrima-ws-server-ws-mockup/soap/enrima.wsdl</wsdlUrl>-->
 							</wsdlUrls>
 							<packageName>at.ac.iiasa.ime.enrima.client.jaxws</packageName>
 						</configuration>
